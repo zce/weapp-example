@@ -1,0 +1,70 @@
+.list {
+  height: 100%;
+}
+
+.list .item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+}
+
+.list .item .poster {
+  width: 128rpx;
+  height: 168rpx;
+  margin-right: 20rpx;
+}
+
+.list .item .meta {
+  flex: 1;
+}
+
+.list .item .meta .title,
+.list .item .meta .sub-title {
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.list .item .meta .title {
+  font-size: 32rpx;
+}
+
+.list .item .meta .sub-title {
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+
+.list .item .meta .artists {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.list .item .rating text {
+  display: inline-block;
+  width: 40rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(247, 76, 49, 0.8);
+  color: #fff;
+  padding: 10rpx;
+  border-radius: 20rpx;
+}
+
+.list .tips {
+  font-size: 28rpx;
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+}
+
+.list .tips image,
+.list .tips text {
+  vertical-align: middle;
+}
+
+.list .tips image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
