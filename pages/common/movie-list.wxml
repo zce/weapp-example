@@ -48,5 +48,4 @@
       </view>
     </view>
   </view>
-  <loading hidden="{{ !loading }}">加载中...</loading>
 </template>

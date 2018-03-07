@@ -8,18 +8,18 @@
     "pages/profile/profile"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#35495e",
+    "navigationBarBackgroundColor": "#40586d",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "电影 « 豆瓣",
-    "backgroundColor": "#000000",
-    "backgroundTextStyle": "light",
+    "backgroundColor": "#f8f9fb",
+    "backgroundTextStyle": "dark",
     "enablePullDownRefresh": false
   },
   "tabBar": {
-    "color": "#999999",
-    "selectedColor": "#35495e",
+    "color": "#666666",
+    "selectedColor": "#000000",
     "borderStyle": "white",
-    "backgroundColor": "#f5f5f5",
+    "backgroundColor": "#f8f9fb",
     "list": [
       {
         "text": "榜单",

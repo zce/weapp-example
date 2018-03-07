@@ -9,7 +9,7 @@
 
 .board {
   box-sizing: border-box;
-  background-color: #f6f6f6;
+  background-color: #f8f9fb;
 }
 
 .board-item {

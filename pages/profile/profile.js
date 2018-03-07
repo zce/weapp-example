@@ -10,15 +10,14 @@ Page({
     title: 'About',
     userInfo: {
       wechat: 'WEDN-NET',
-      nickName: 'https://github.com/zce/weapp-demo',
+      nickName: 'https://github.com/zce/weapp-douban',
       avatarUrl: '../../images/qrcode.png'
     }
   },
 
   getUserInfo () {
-    const that = this
     app.wechat.getUserInfo()
-      .then(res => that.setData({ userInfo: res.userInfo }))
+      .then(res => this.setData({ userInfo: res.userInfo }))
   },
 
   /**

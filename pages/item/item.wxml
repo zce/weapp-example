@@ -1,5 +1,4 @@
 <view class="container">
-  <loading hidden="{{ !loading }}">加载中...</loading>
   <image wx:if="{{ movie.images.large }}" class="background" src="{{ movie.images.large }}" mode="aspectFill"/>
   <block wx:if="{{ movie.title }}">
     <view class="meta">

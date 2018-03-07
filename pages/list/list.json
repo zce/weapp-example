@@ -1,5 +1,3 @@
 {
-  "backgroundColor": "#ffffff",
-  "backgroundTextStyle": "dark",
-  "enablePullDownRefresh": false
+  "enablePullDownRefresh": true
 }

@@ -8,7 +8,6 @@ Page({
    */
   data: {
     title: '',
-    loading: true,
     movie: {}
   },
 
@@ -16,14 +15,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad (params) {
+    wx.showLoading({ title: '拼命加载中...' })
+
     app.douban.findOne(params.id)
       .then(d => {
-        this.setData({ title: d.title, movie: d, loading: false })
+        this.setData({ title: d.title, movie: d })
         wx.setNavigationBarTitle({ title: d.title + ' « 电影 « 豆瓣' })
+        wx.hideLoading()
       })
       .catch(e => {
-        this.setData({ title: '获取数据异常', movie: {}, loading: false })
+        this.setData({ title: '获取数据异常', movie: {} })
         console.error(e)
+        wx.hideLoading()
       })
   },
 
@@ -34,38 +37,10 @@ Page({
     wx.setNavigationBarTitle({ title: this.data.title + ' « 电影 « 豆瓣' })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow () {
-    // TODO: onShow
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide () {
-    // TODO: onHide
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload () {
-    // TODO: onUnload
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh () {
-    // TODO: onPullDownRefresh
-  },
-
   onShareAppMessage () {
     return {
-      title: '自定义分享标题',
-      desc: '自定义分享描述',
+      title: this.data.title,
+      desc: this.data.title,
       path: '/pages/item?id=' + this.data.id
     }
   }

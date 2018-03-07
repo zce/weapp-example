@@ -10,7 +10,6 @@ Page({
     title: '',
     subtitle: '加载中...',
     type: 'in_theaters',
-    loading: true,
     hasMore: true,
     page: 1,
     size: 20,
@@ -20,19 +19,22 @@ Page({
   loadMore () {
     if (!this.data.hasMore) return
 
-    this.setData({ subtitle: '加载中...', loading: true })
+    wx.showLoading({ title: '拼命加载中...' })
+    this.setData({ subtitle: '加载中...' })
 
     return app.douban.find(this.data.type, this.data.page++, this.data.size)
       .then(d => {
         if (d.subjects.length) {
-          this.setData({ subtitle: d.title, movies: this.data.movies.concat(d.subjects), loading: false })
+          this.setData({ subtitle: d.title, movies: this.data.movies.concat(d.subjects) })
         } else {
-          this.setData({ subtitle: d.title, hasMore: false, loading: false })
+          this.setData({ subtitle: d.title, hasMore: false })
         }
+        wx.hideLoading()
       })
       .catch(e => {
-        this.setData({ subtitle: '获取数据异常', loading: false })
+        this.setData({ subtitle: '获取数据异常' })
         console.error(e)
+        wx.hideLoading()
       })
   },
 
@@ -61,7 +63,7 @@ Page({
   onPullDownRefresh () {
     this.setData({ movies: [], page: 1, hasMore: true })
     this.loadMore()
-      .then(() => app.wechat.original.stopPullDownRefresh())
+      .then(() => wx.stopPullDownRefresh())
   },
 
   onReachBottom () {
