@@ -27,9 +27,9 @@ page {
   left: 50%;
   width: 300rpx;
   margin-left: -150rpx;
-  background-color: rgba(64, 88, 109, .4);
-  color: #fff;
-  border: 1rpx solid rgba(64, 88, 109, .8);
+  background-color: rgba(237, 237, 237, .6);
+  color: #345;
+  border: 1rpx solid rgba(237, 237, 237, .8);
   border-radius: 200rpx;
   font-size: 40rpx;
 }

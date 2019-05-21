@@ -40,4 +40,4 @@ then, open `dist` in wechat devtools
 
 ## License
 
-MIT &copy; [汪磊](http://github.com/zce)
+MIT &copy; [汪磊](https://zce.me)

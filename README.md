@@ -72,8 +72,8 @@ Welcome PR / Issue / WeChat！
 
 如果你不喜欢热闹，或者加不进去，可以告诉我（注意我不收红包！有问题直接留言就行，只求描述到我能看懂！我尽快回复）
 
-![我的微信](qrcode1.png)
+![我的微信](https://img.zce.me/qrcode/wechat.jpg)
 
 ## 许可
 
-[MIT](./LICENSE) &copy; [汪磊](http://github.com/zce)
+[MIT](./LICENSE) &copy; [汪磊](https://zce.me)

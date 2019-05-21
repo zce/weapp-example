@@ -11,7 +11,7 @@ Page({
     userInfo: {
       wechat: 'WEDN-NET',
       nickName: 'https://github.com/zce/weapp-douban',
-      avatarUrl: '../../images/qrcode.png'
+      avatarUrl: 'https://img.zce.me/qrcode/wechat.jpg'
     }
   },
 

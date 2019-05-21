@@ -12,6 +12,8 @@
 	"appid": "wxb9eb22375e8789a7",
 	"projectname": "douban",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -9,7 +9,8 @@ Page({
   data: {
     page: 1,
     size: 20,
-    subtitle: '请在此输入搜索内容',
+    // subtitle: '请在此输入搜索内容',
+    subtitle: '搜索接口暂时无法使用',
     movies: [],
     search: '',
     loading: false,

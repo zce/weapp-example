@@ -8,8 +8,8 @@
     "pages/profile/profile"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#40586d",
-    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#ededed",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "电影 « 豆瓣",
     "backgroundColor": "#f8f9fb",
     "backgroundTextStyle": "dark",
@@ -19,7 +19,7 @@
     "color": "#666666",
     "selectedColor": "#000000",
     "borderStyle": "white",
-    "backgroundColor": "#f8f9fb",
+    "backgroundColor": "#f7f7f7",
     "list": [
       {
         "text": "榜单",
@@ -45,5 +45,6 @@
     "request": 20000,
     "downloadFile": 20000
   },
-  "debug": false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
