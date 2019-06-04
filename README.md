@@ -1,15 +1,8 @@
 # 微信小程序示例
 
-> 一个微信小程序开发示例（豆瓣电影）
->
-> - 新版本（不包含工作流）请移步至：https://github.com/zce/weapp-douban
-> - ~~当前仓库会暂缓更新，主要留下来给大家答疑~~
-> - 需要基础教程的朋友们稍等一阵吧，目前有计划重新去写一套更系统的。最近有很多要屈服于现实的问题，谢谢理解 🙏
+> 一个微信小程序（应用号）开发示例（豆瓣电影）
 
-[![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
-[![Dependency Status][dependency-image]][dependency-url]
-[![devDependency Status][devdependency-image]][devdependency-url]
 [![Code Style][style-image]][style-url]
 
 ## 关于豆瓣 API 的说明
@@ -109,14 +102,8 @@ Welcome PR / Issue / WeChat！
 [MIT](LICENSE) &copy; [汪磊](https://zce.me)
 
 
-[travis-image]: https://img.shields.io/travis/zce/weapp-douban.svg
-[travis-url]: https://travis-ci.org/zce/weapp-douban
 [license-image]: https://img.shields.io/github/license/zce/weapp-douban.svg
 [license-url]: https://github.com/zce/weapp-douban/blob/master/LICENSE
-[dependency-image]: https://img.shields.io/david/zce/weapp-douban.svg
-[dependency-url]: https://david-dm.org/zce/weapp-douban
-[devdependency-image]: https://img.shields.io/david/dev/zce/weapp-douban.svg
-[devdependency-url]: https://david-dm.org/zce/weapp-douban?type=dev
 [style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [style-url]: http://standardjs.com
 
