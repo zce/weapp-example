@@ -1,52 +1,42 @@
-# 微信小程序开发教程示例
+# 微信小程序示例
 
-> 一个微信小程序（应用号）开发示例（豆瓣电影）
+> 一个微信小程序开发示例（豆瓣电影）
+>
+> - 新版本（不包含工作流）请移步至：https://github.com/zce/weapp-douban
+> - ~~当前仓库会暂缓更新，主要留下来给大家答疑~~
+> - 需要基础教程的朋友们稍等一阵吧，目前有计划重新去写一套更系统的。最近有很多要屈服于现实的问题，谢谢理解 🙏
 
-[![Build Status](https://travis-ci.org/zce/weapp-demo.svg?branch=master)](https://travis-ci.org/zce/weapp-demo)
-[![Dependency Status](https://david-dm.org/zce/weapp-demo.svg)](https://david-dm.org/zce/weapp-demo)
-[![devDependency Status](https://david-dm.org/zce/weapp-demo/dev-status.svg)](https://david-dm.org/zce/weapp-demo#info=devDependencies)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Build Status][travis-image]][travis-url]
+[![License][license-image]][license-url]
+[![Dependency Status][dependency-image]][dependency-url]
+[![devDependency Status][devdependency-image]][devdependency-url]
+[![Code Style][style-image]][style-url]
 
-## 豆瓣 API 文档
+## 关于豆瓣 API 的说明
+
+### 豆瓣 API 文档
 
 豆瓣 API 服务计划对外关闭，官方 API 已经下线，考虑到众多初学者的需要我重新整理了一份
 
 - https://github.com/zce/douban-api-docs
 
-## 关于豆瓣API限制第三方小程序调用问题说明
+### 关于豆瓣 API 限制第三方小程序调用问题说明
 
-很多朋友最近都在反馈豆瓣接口 403 的问题，我抽空仔细排查了一遍，豆瓣官方应该是限制了第三方小程序对豆瓣接口的调用，对于这一行为我认为“无可厚非”，因为你没有为豆瓣的免费服务“买单”，请各位不要骂街。
+很多朋友最近都在反馈豆瓣接口 403 的问题，我抽空仔细排查了一遍，豆瓣官方应该是限制了第三方小程序对豆瓣接口的调用
 
-为了帮助更多初学者或是爱好者，我个人准备了一个反向代理服务器（免费开放）。希望各位**珍惜资源切勿滥用**，谢谢！
+具体说明及解决办法：https://github.com/zce/douban-api-proxy (包括解决方法)
 
-接口地址：
+为了帮助更多初学者或是爱好者，我还在这个仓库中提供了免费的代理服务，使用方式和原理都在上面这个地址中。希望各位**珍惜资源切勿滥用**，谢谢！
 
-- https://douban.uieee.com （支持 HTTP / HTTPS）
-- https://douban-api.uieee.com
-- https://douban-api.now.sh
-- https://douban-api.zce.now.sh
+## 文字教程资料
 
-**接口限流：10000 次 / 1 小时**，由于是豆瓣官方的限流，所以所有使用我搭建的这个反向代理服务的朋友都是**共享这 10000 次请求**的，我也没办法再去提高这个数字（普通个人用户是 100 次 / 1 小时），所以还是希望大家不要滥用。
+> 很早写的内容，可能新版本有出入，仅供参考
 
-当然如果还是不幸超出额度的话，就只能等待下一个整点，不明白为什么的朋友，可以自己 Google 一下接口限流：API Rate Limit。
+- https://github.com/zce/weapp-demo/wiki/微信小程序开发教程
 
-如果你可以的话，建议你自己参考我的配置文件配置一个自己的反向代理服务（这样就没人跟你抢了😀）
+## 项目预览
 
-接口配置文件仓库：https://github.com/zce/douban-api-proxy (包括解决方法)
-
-### 具体使用
-
-- 将豆瓣的 API 地址更改为以上地址
-- 修改微信小程序后台的白名单
-
-## 文字教程
-
-- https://github.com/zce/weapp-demo/tree/tutorial
-
-## 相关演示
-
-- [视频演示如何运行当前项目](http://files.wedn.net/videos/weapp/run-it.mp4)
-- [豆瓣电影小程序真机测试](http://files.wedn.net/videos/weapp/weapp.mp4)
+![豆瓣电影演示](https://user-images.githubusercontent.com/6166576/58858164-82ae5880-86d9-11e9-9691-d775a9f5d500.gif)
 
 很多朋友给我发消息说希望可以真机体验一下，所以前段时间我抽空把这个小程序发布了，大家可以通过微信扫码体验：
 
@@ -54,12 +44,47 @@
 
 源码我放在了：https://github.com/zce/weapp-douban
 
+## 使用说明
+
+### 相关演示
+
+- [视频演示如何运行当前项目](https://www.bilibili.com/video/av54540404)
+- [豆瓣电影小程序真机测试](https://www.bilibili.com/video/av54540404/?p=2)
+
+### 将项目克隆到本地
+
+用到了`GIT`环境，没有环境的话可以直接下载项目源代码到盆地
+
+```shell
+# 定位到任意目录
+$ cd path/to/root
+
+# 克隆仓库到指定的文件夹
+$ git clone https://github.com/zce/weapp-douban.git [project-name] -b master --depth 1
+
+# 进入指定的文件夹
+$ cd [project-name]
+```
+
+通过`微信Web开放者工具`打开项目根目录，预览~
+
+- 打开`微信Web开放者工具`，选择`添加项目`，填写或选择相应信息
+   + AppID：点击右下角`无AppID`（个人用户可以申请）
+  - 项目名称：随便填写，因为不涉及到部署，所以无所谓
+  - 项目目录：选择项目根目录
+  - 点击`添加项目`
+- 注意在微信公众平台后台添加域名白名单设置或者关闭开发阶段对请求域名安全的校验
+  - https://api.map.baidu.com
+  - https://douban-api.uieee.com
+
 ## 相关项目
 
 - [zce/weapp-demo](https://github.com/zce/weapp-demo) - 包含开发工作流版本的豆瓣电影
 - [zce/weapp-todos](https://github.com/zce/weapp-todos) - 一个简单的任务清单小程序
 - [zce/weapp-locally](https://github.com/zce/weapp-locally) - 本地生活，本地吃喝玩乐
 - [zce/weapp-beauty](https://github.com/zce/weapp-beauty) - 拍拍测颜值，AI
+- [zce/douban-api-docs](https://github.com/zce/douban-api-docs) - 豆瓣 API 文档，非官方，个人收集整理
+- [zce/douban-api-proxy](https://github.com/zce/douban-api-proxy) - 豆瓣 API 代理，Nginx 和 Node Http Proxy 两种方式实现
 - ~~[zce/weapp-boilerplate](https://github.com/zce/weapp-boilerplate) - 一个小程序的快速开发骨架~~
 
 ## 有想法？
@@ -77,8 +102,21 @@ Welcome PR / Issue / WeChat！
 
 如果你不喜欢热闹，或者加不进去，可以告诉我（注意我不收红包！有问题直接留言就行，只求描述到我能看懂！我尽快回复）
 
-![我的微信](https://img.zce.me/qrcode/wechat.jpg)
+<img src="https://img.zce.me/qrcode/wechat.jpg" alt="我的微信：WEDN-NET" width="300">
 
 ## 许可
 
-[MIT](./LICENSE) &copy; [汪磊](https://zce.me)
+[MIT](LICENSE) &copy; [汪磊](https://zce.me)
+
+
+[travis-image]: https://img.shields.io/travis/zce/weapp-douban.svg
+[travis-url]: https://travis-ci.org/zce/weapp-douban
+[license-image]: https://img.shields.io/github/license/zce/weapp-douban.svg
+[license-url]: https://github.com/zce/weapp-douban/blob/master/LICENSE
+[dependency-image]: https://img.shields.io/david/zce/weapp-douban.svg
+[dependency-url]: https://david-dm.org/zce/weapp-douban
+[devdependency-image]: https://img.shields.io/david/dev/zce/weapp-douban.svg
+[devdependency-url]: https://david-dm.org/zce/weapp-douban?type=dev
+[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[style-url]: http://standardjs.com
+
