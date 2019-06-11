@@ -75,7 +75,7 @@ $ cd [project-name]
 - [zce/weapp-demo](https://github.com/zce/weapp-demo) - 包含开发工作流版本的豆瓣电影
 - [zce/weapp-todos](https://github.com/zce/weapp-todos) - 一个简单的任务清单小程序
 - [zce/weapp-locally](https://github.com/zce/weapp-locally) - 本地生活，本地吃喝玩乐
-- [zce/weapp-beauty](https://github.com/zce/weapp-beauty) - 拍拍测颜值，AI
+- [zce/weapp-beauty](https://github.com/zce/weapp-beauty) - 基于腾讯 AI 的拍照测颜值智能应用
 - [zce/douban-api-docs](https://github.com/zce/douban-api-docs) - 豆瓣 API 文档，非官方，个人收集整理
 - [zce/douban-api-proxy](https://github.com/zce/douban-api-proxy) - 豆瓣 API 代理，Nginx 和 Node Http Proxy 两种方式实现
 - ~~[zce/weapp-boilerplate](https://github.com/zce/weapp-boilerplate) - 一个小程序的快速开发骨架~~
