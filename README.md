@@ -2,12 +2,7 @@
 
 ## 郑重声明：基于某瓣的示例正式下线，尊重版权，从我做起。
 
-> 一个微信小程序（应用号）开发示例（豆瓣电影）
-
-[![License][license-image]][license-url]
-[![Code Style][style-image]][style-url]
-
-## 相关项目
+## 其它相关项目
 
 - [zce/weapp-todos](https://github.com/zce/weapp-todos) - 一个简单的任务清单小程序
 - [zce/weapp-locally](https://github.com/zce/weapp-locally) - 本地生活，本地吃喝玩乐
